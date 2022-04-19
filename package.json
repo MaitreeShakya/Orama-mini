@@ -1,19 +1,45 @@
 {
-  "name": "orama-mini",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MaitreeShakya/Orama-mini.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MaitreeShakya/Orama-mini/issues"
-  },
-  "homepage": "https://github.com/MaitreeShakya/Orama-mini#readme"
+	"name": "orama-mini",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node app.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "nodemon app.js",
+		"bundle": "webpack --watch --progress --color --mode=development",
+		"bundle-prod": "webpack --progress --color --mode=production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MaitreeShakya/Orama-mini.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MaitreeShakya/Orama-mini/issues"
+	},
+	"homepage": "https://github.com/MaitreeShakya/Orama-mini#readme",
+	"dependencies": {
+		"dotenv-webpack": "^7.1.0",
+		"express": "^4.17.3",
+		"mini-css-extract-plugin": "^2.6.0",
+		"nodemon": "^2.0.15",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-react-jsx": "^7.17.3",
+		"@babel/preset-env": "^7.16.11",
+		"@babel/preset-react": "^7.16.7",
+		"@types/express": "^4.17.13",
+		"babel-loader": "^8.2.4",
+		"css-loader": "^6.7.1",
+		"postcss-loader": "^6.2.1",
+		"ts-loader": "^9.2.8",
+		"typescript": "^4.6.3",
+		"webpack": "^5.72.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-node-externals": "^3.0.0"
+	}
 }
